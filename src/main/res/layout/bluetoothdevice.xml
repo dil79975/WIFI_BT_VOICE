@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center"
+    android:onClick="group">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="54dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/bt" />
+
+    <TextView
+        android:id="@+id/btdevice_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center_vertical" />
+</LinearLayout>

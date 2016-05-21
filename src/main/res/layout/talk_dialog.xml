@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receiveTime"
+            android:text="接收時間列" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendTime"
+            android:text="發送時間列" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="99dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:src="@drawable/saybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/SAY_BUTTON" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="未說話"
+            android:id="@+id/say_status"
+            android:layout_weight="0.89" />
+
+        <Button
+            android:text="取消收音"
+            android:textSize="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="hangUp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="擴音器 :"
+                android:id="@+id/textView3" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="speakerPhoneOn"
+                android:id="@+id/speakerPhoneOn"
+                android:checked="false" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
