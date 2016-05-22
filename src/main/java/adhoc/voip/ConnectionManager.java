@@ -260,6 +260,12 @@ public class ConnectionManager {
         out.write('1');
         out.write('2');
         out.write('3');
+		out.write(1);
+		out.write(2);
+		out.write(3);
+		out.write('1');
+		out.write('2');
+		out.write('3');
         out.write(END_OF_TRANSMISSION); // end of transmission
         Log.v("test-log","亂傳"); // TODO - remove
     }
